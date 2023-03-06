@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, 'Open Sans', sans-serif;
+}
+
+:root {
+    --white: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 60px;
+    height: 80px;
+    background-color: #255ee9;
+    text-transform: capitalize;
+}
+
+header ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    font-weight: 600;
+
+}
+
+header ul li a {
+    color: var(--white);
+}
+
+header .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #5865F2;
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    padding: 3px 0px;
+    border-radius: 99px;
+}
+
+.first-section {
+    position: relative;
+    height: 500px;
+    color: var(--white);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .background-pictures {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #404eed;
+}
+
+.first-section .background-pictures img:nth-of-type(1) {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50%;
+}
+
+.first-section .background-pictures img:nth-of-type(2) {
+    position: absolute;
+    left: -300px;
+    bottom: 0px;
+    width: 65%;
+}
+
+.first-section h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.first-section p {
+    font-size: 1.1em;
+    text-align: center;
+    width: 700px;
+    margin: 30px 0px;
+}
+
+.buttons {
+    margin: 20px;
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-button,
+.second-button {
+    font-weight: 500;
+    font-size: 1.2em;
+    width: 290px;
+    height: 55px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+.first-button img {
+    margin-right: 8px;
+}
+
+.second-button {
+    width: 330px;
+    color: white;
+    background-color: #23272A;
+}
+
+/* hover effects */
+.first-button:hover {
+    background-color: rgba(255, 255, 255, 0.922);
+}
+
+.second-button:hover {
+    background-color: #23272ae7;
+}
+
+/* second-section and four-section because are have the same values  */
+.second-section,
+.four-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.discreption {
+    width: 370px;
+}
+
+.discreption {
+    margin-left: -220px;
+}
+
+.discreption h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.discreption p {
+    font-size: 20px;
+}
+
+.three-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+}
+
+.three-section .discreption {
+    margin-left: 0px;
+    margin-right: 90px;
+}
+
+/* five section  */
+.five-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 110px;
+}
+
+.title {
+    text-align: center;
+    width: 920px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.five-section h1 {
+    font-size: 3.2em;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.five-section img {
+    width: 1100px;
+}
+
+.ready {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto;
+    width: 750px;
+}
+
+.ready img {
+    width: 550px;
+    margin-bottom: -30px;
+}
+
+.three-button img {
+    width: 30px;
+    margin-right: 8px;
+}
+
+.three-button {
+    margin-top: 30px;
+    background-color: #5865F2;
+    font-weight: 500;
+    font-size: 1.2em;
+    width: 290px;
+    height: 55px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: #2c2f33;
+    height: 500px;
+    padding: 50px 50px;
+}
+
+footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer .container .links {
+    margin-top: 15px;
+    min-width: 200px;
+}
+
+footer .container .links h2 {
+    color: #255ee9;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+footer .container .links p {
+    margin: 6px auto;
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    margin: 20px auto;
+}
+
+.the-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.the-bottom a {
+    color: white;
+    font-weight: bold;
+    background-color: #5865F2;
+    padding: 10px 20px;
+    border-radius: 99px;
+}
